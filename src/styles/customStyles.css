@@ -1,0 +1,453 @@
+.c-pointer:hover {
+  cursor: pointer;
+}
+.bg-blur {
+  backdrop-filter: blur(50px); /* Adjust the blur amount */
+  -webkit-backdrop-filter: blur(50px); /* For Safari compatibility */
+}
+.custom-zoom-btn {
+  transition: 300ms ease-in-out;
+}
+.custom-zoom-btn:hover {
+  transform: scale(1.05) !important;
+}
+:root {
+  /* Default Colors */
+  --theme-default-dark: #37474f; /* Darkest */
+  --theme-default-mid: #a4bcc9; /* Middle */
+  --theme-default-light: #cfd8dc; /* Light */
+  --theme-default-btn: #b0bec5; /* btn */
+  --theme-default-thead: #4a5f69; /* thead*/
+
+  /* Purple */
+  --theme-purple-dark: #420d58; /* Darkest */
+  --theme-purple-mid: #c1a6cf; /* Middle */
+  --theme-purple-light: #ebd3f8; /* btn */
+  --theme-purple-btn: white; /* Use for btn */
+  --theme-purple-thead: #643677; /* thead */
+
+  /* Red */
+  --theme-red-dark: #d12e5a; /* Darkest */
+  --theme-red-mid: #f3b4b4; /* Middle */
+  --theme-red-light: #f1e8d7; /* btn */
+  --theme-red-btn: white; /* Use for btn */
+  --theme-red-thead: #d3476d; /* thead */
+
+  /* Blue */
+  --theme-blue-dark: #0f2469; /* Darkest */
+  --theme-blue-mid: #4e68bd; /* Middle */
+  --theme-blue-light: #ebf4f6; /* btn */
+  --theme-blue-btn: white; /* Use for btn */
+  --theme-blue-thead: #2e407e; /* thead */
+
+  /* Green */
+  --theme-green-dark: #348d58; /* Darkest */
+  --theme-green-mid: #c0ecd2; /* Middle */
+  --theme-green-light: #fff5e0; /* btn */
+  --theme-green-btn: white; /* Use for btn */
+  --theme-green-thead: #41885d; /* thead */
+
+  /* Dark */
+  --theme-dark-dark: #091825; /* Darkest */
+  --theme-dark-mid: #253646; /* Middle */
+  --theme-dark-light: #0d1117; /* btn */
+  --theme-dark-btn: white; /* Use for btn */
+  --theme-dark-thead: #314355; /* thead */
+
+  /* Brown */
+  --theme-brown-dark: #3c3d37; /* Darkest */
+  --theme-brown-mid: #9da79a; /* Middle */
+  --theme-brown-light: #ecdfcc; /* Light */
+  --theme-brown-btn: #b0bec5; /* btn */
+  --theme-brown-thead: #454641; /* thead */
+
+  /* Pink */
+  --theme-pink-dark: #86469c; /* Darkest */
+  --theme-pink-mid: #cea8d8; /* Middle */
+  --theme-pink-light: #fdb3dd; /* Light */
+  --theme-pink-btn: #ffcdea; /* btn */
+  --theme-pink-thead: #8b569c; /* thead */
+
+  /* Light */
+  --theme-light-dark: #0b6e74; /* Darkest */
+  --theme-light-mid: #a6e3e9; /* Middle */
+  --theme-light-light: #e0f1f3; /* Light */
+  --theme-light-btn: #e3fdfd; /* btn */
+  --theme-light-thead: #277e83; /* thead */
+
+  --btn-transition: background-color 800ms;
+  --bg-custom: #f0f2f5;
+}
+
+/* Theme Classes */
+/*<---------------- Default ----------------> */
+.default-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-default-dark) !important;
+}
+.default-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-default-mid) !important;
+}
+.default-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-default-light) !important;
+}
+.default-btn {
+  transition: background-color 800ms;
+  color: var(--theme-default-btn) !important;
+  background-color: var(--theme-default-dark) !important;
+}
+.default-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-default-dark) !important;
+}
+.default-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-default-light) !important;
+}
+.default-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-default-light) !important;
+}
+.default-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-default-dark) !important;
+}
+.thead-default .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-default-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+
+/*<---------------- Brown ----------------> */
+.brown-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-brown-dark) !important;
+}
+.brown-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-brown-mid) !important;
+}
+.brown-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-brown-light) !important;
+}
+.brown-btn {
+  transition: background-color 800ms;
+  color: var(--theme-brown-btn) !important;
+  background-color: var(--theme-brown-dark) !important;
+}
+.brown-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-brown-dark) !important;
+}
+.brown-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-brown-light) !important;
+}
+.brown-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-brown-light) !important;
+}
+.brown-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-brown-dark) !important;
+}
+.thead-brown .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-brown-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+/*<---------------- Light ----------------> */
+.light-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-light-dark) !important;
+}
+.light-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-light-mid) !important;
+}
+.light-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-light-light) !important;
+}
+.light-btn {
+  transition: background-color 800ms;
+  color: var(--theme-light-btn) !important;
+  background-color: var(--theme-light-dark) !important;
+}
+.light-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-light-dark) !important;
+}
+.light-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-light-light) !important;
+}
+.light-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-light-light) !important;
+}
+.light-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-light-dark) !important;
+}
+.thead-light .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-light-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+/*<---------------- Pink ----------------> */
+.pink-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-pink-dark) !important;
+}
+.pink-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-pink-mid) !important;
+}
+.pink-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-pink-light) !important;
+}
+.pink-btn {
+  transition: background-color 800ms;
+  color: var(--theme-pink-btn) !important;
+  background-color: var(--theme-pink-dark) !important;
+}
+.pink-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-pink-dark) !important;
+}
+.pink-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-pink-light) !important;
+}
+.pink-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-pink-light) !important;
+}
+.pink-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-pink-dark) !important;
+}
+.thead-pink .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-pink-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+/*<---------------- Purple ----------------> */
+.purple-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-purple-dark) !important;
+}
+.purple-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-purple-mid) !important;
+}
+.purple-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-purple-light) !important;
+}
+.purple-btn {
+  transition: background-color 800ms;
+  color: var(--theme-purple-btn) !important;
+  background-color: var(--theme-purple-dark) !important;
+}
+.purple-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-purple-dark) !important;
+}
+.purple-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-purple-light) !important;
+}
+.purple-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-purple-light) !important;
+}
+
+.purple-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-purple-dark) !important;
+}
+.thead-purple .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-purple-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+/*<---------------- Red ----------------> */
+.red-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-red-dark) !important;
+}
+.red-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-red-mid) !important;
+}
+.red-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-red-light) !important;
+}
+.red-btn {
+  transition: background-color 800ms;
+  color: var(--theme-red-btn) !important;
+  background-color: var(--theme-red-dark) !important;
+}
+.red-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-red-dark) !important;
+}
+.red-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-red-light) !important;
+}
+.red-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-red-light) !important;
+}
+.red-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-red-dark) !important;
+}
+.thead-red .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-red-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+/*<---------------- Blue ----------------> */
+.blue-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-blue-dark) !important;
+}
+.blue-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-blue-mid) !important;
+}
+.blue-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-blue-light) !important;
+}
+.blue-btn {
+  transition: background-color 800ms;
+  color: var(--theme-blue-btn) !important;
+  background-color: var(--theme-blue-dark) !important;
+}
+.blue-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-blue-dark) !important;
+}
+.blue-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-blue-light) !important;
+}
+.blue-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-blue-light) !important;
+}
+.blue-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-blue-dark) !important;
+}
+.thead-blue .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-blue-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+/*<---------------- Green ----------------> */
+.green-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-green-dark) !important;
+}
+.green-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-green-mid) !important;
+}
+.green-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-green-light) !important;
+}
+.green-btn {
+  transition: background-color 800ms;
+  color: var(--theme-green-btn) !important;
+  background-color: var(--theme-green-dark) !important;
+}
+.green-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-green-dark) !important;
+}
+.green-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-green-light) !important;
+}
+.green-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-green-light) !important;
+}
+.green-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-green-dark) !important;
+}
+.thead-green .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-green-thead) !important;
+  color: var(--theme-light-light) !important;
+}
+/*<---------------- Dark ----------------> */
+.dark-dark {
+  transition: background-color 800ms;
+  background-color: var(--theme-dark-dark) !important;
+}
+.dark-mid {
+  transition: background-color 800ms;
+  background-color: var(--theme-dark-mid) !important;
+}
+.dark-light {
+  transition: background-color 800ms;
+  background-color: var(--theme-dark-light) !important;
+}
+.dark-btn {
+  transition: background-color 800ms;
+  color: var(--theme-dark-btn) !important;
+  background-color: var(--theme-dark-dark) !important;
+}
+.dark-dark-text {
+  transition: background-color 800ms;
+  color: var(--theme-dark-btn) !important;
+}
+.dark-light-text {
+  transition: background-color 800ms;
+  color: var(--theme-light-btn) !important;
+}
+.dark-light-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-light-btn) !important;
+}
+.dark-dark-border {
+  transition: background-color 800ms;
+  border: 2px solid;
+  border-color: var(--theme-dark-btn) !important;
+}
+.thead-dark .ant-table-thead > tr > th {
+  transition: background-color 800ms;
+  background: var(--theme-dark-thead) !important;
+  color: var(--theme-light-light) !important;
+}

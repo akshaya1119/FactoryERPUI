@@ -1,0 +1,214 @@
+/* body {
+  font-family: 'Poppins', sans-serif !important;
+  } */
+  
+  *{
+    font-family: 'Poppins', sans-serif ;
+}
+
+/* audio player animation */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: .5;
+  }
+}
+
+/* Container for fixed position and styling */
+.user-interface-container {
+    position: fixed;
+    top: 540px; 
+    /* left: 0px; */
+    right: -20px; 
+    z-index: 1; /* Ensures it stays on top of other content */
+    width: 100px; /* Adjust width as necessary */
+    height: auto; /* Adjust height as necessary */
+    transition: transform 0.5s ; 
+  }
+  
+  .user-interface-container:hover{
+    transform: scale(1.1);
+  }
+  .user-interface-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .settings-icon-ui {
+    position: absolute;
+    left: 32px;
+    font-size: 24px; /* Adjust size of the icon */
+    color: #ffffff; /* Adjust color of the icon */
+    animation: rotate 2s linear infinite; /* Apply rotation animation */
+    z-index: 1; /* Ensure icon is above the image */
+  }
+  
+  .ui-icon-img {
+    width: 50px; /* Adjust size of the image */
+    height: auto;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .enhanced-table {
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .enhanced-table-header {
+    background-color: #f0f0f0 !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .enhanced-table-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s;
+  }
+  
+  .enhanced-table-row:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .striped-table-row:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+  }
+  
+  .dense-table-row {
+    padding: 8px !important;
+  }
+  
+  table {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  .Progressbarcolor .progress-bar{
+color: black !important;
+overflow: unset;
+  }

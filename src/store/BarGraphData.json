@@ -1,0 +1,30 @@
+[
+    {
+        "label":"CTP",
+        "value":20
+    },
+    {
+        "label":"Printing",
+        "value":30
+    },
+    {
+        "label":"Cutting",
+        "value":40
+    },
+    {
+        "label":"Mixing",
+        "value":20
+    },
+    {
+        "label":"Numbering",
+        "value":30
+    },
+    {
+        "label":"Filling",
+        "value":40
+    },
+    {
+        "label":"Bundling",
+        "value":25
+    }
+]

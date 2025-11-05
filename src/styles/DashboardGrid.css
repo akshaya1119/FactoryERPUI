@@ -1,0 +1,35 @@
+.ag-theme-quartz,
+.ag-theme-quartz-dark {
+    /* Changes the color of the grid text */
+    --ag-foreground-color: rgb(0, 0, 0);
+    /* Changes the color of the grid background */
+    --ag-background-color: rgb(255, 255, 255);
+    /* Changes the header color of the top row */
+    --ag-header-background-color: rgb(236, 236, 236);
+    /* Changes the hover color of the row*/
+    --ag-row-hover-color: rgb(216, 226, 255);
+}
+
+html, body, #root {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ag-theme-quartz-dark {
+    background-color: #2e3b4e;
+  }
+  
+/* Center-align the header text */
+.center-header .ag-header-cell-label {
+  justify-content: center;
+}
+
+/* Center-align the cell content */
+.ag-cell {
+  text-align: center;
+}
+
+
+  

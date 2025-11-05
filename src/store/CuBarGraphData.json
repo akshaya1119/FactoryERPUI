@@ -1,0 +1,45 @@
+[
+    {
+      "period": "Project 1",
+      "completed": 5000,
+      "remaining": 3000,
+      "lots": [
+        { "name": "Lot-1", "completion": 70, "remaining": 30 },
+        { "name": "Lot-2", "completion": 60, "remaining": 40 },
+        { "name": "Lot-3", "completion": 60, "remaining": 40 },
+        { "name": "Lot-4", "completion": 60, "remaining": 40 },
+        { "name": "Lot-5", "completion": 60, "remaining": 40 },
+        { "name": "Lot-6", "completion": 60, "remaining": 40 },
+        { "name": "Lot-7", "completion": 60, "remaining": 40 },
+        { "name": "Lot-8", "completion": 80, "remaining": 20 }
+      ]
+    },
+    {
+      "period": "Project 2",
+      "completed": 7000,
+      "remaining": 8000,
+      "lots": [
+        { "name": "Lot-1", "completion": 50, "remaining": 50 },
+        { "name": "Lot-2", "completion": 65, "remaining": 35 }
+      ]
+    },
+    {
+      "period": "Project 3",
+      "completed": 2000,
+      "remaining": 6000,
+      "lots": [
+        { "name": "Lot-1", "completion": 75, "remaining": 25 },
+        { "name": "Lot-2", "completion": 55, "remaining": 45 }
+      ]
+    },
+    {
+      "period": "Project 4",
+      "completed": 10000,
+      "remaining": 5500,
+      "lots": [
+        { "name": "Lot-1", "completion": 85, "remaining": 15 },
+        { "name": "Lot-2", "completion": 90, "remaining": 10 }
+      ]
+    }
+  ]
+  

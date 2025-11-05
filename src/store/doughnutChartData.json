@@ -1,0 +1,157 @@
+[
+    {
+        "label": "'K'",
+        "lotId": "1232",
+        "tCatch":450,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 80
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 20
+        }
+    },
+    {
+        "label": "'K'",
+        "lotId": "1232",
+        "tCatch":450,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 80
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 20
+        }
+    },
+    {
+        "label": "'K'",
+        "lotId": "1232",
+        "tCatch":450,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 80
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 20
+        }
+    },
+    {
+        "label": "'K'",
+        "lotId": "1232",
+        "tCatch":450,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 80
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 20
+        }
+    },
+    {
+        "label": "'K'",
+        "lotId": "1232",
+        "tCatch":450,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 80
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 20
+        }
+    },
+    {
+        "label": "'K'",
+        "lotId": "1232",
+        "tCatch":450,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 80
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 20
+        }
+    },
+    {
+        "label": "'K'",
+        "lotId": "1233",
+        "tCatch":430,
+        "type": "Paper",
+        "completed": {
+            "title": "Completed",
+            "value": 50
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 50
+        }
+    },
+    {
+        "label": "'K'",
+        "lotId": "1234",     
+        "tCatch":250,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 60
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 40
+        }
+    },
+    {
+        "label": "'BHU'",
+        "lotId": "1235",
+        "tCatch":100,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 30
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 70
+        }
+    },
+    {
+        "label": "'BHU'",
+        "lotId": "1236",
+        "tCatch":600,
+        "type": "Paper",
+        "completed": {
+            "title": "Completed",
+            "value": 60
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 40
+        }
+    },
+    {
+        "label": "'BHU'",
+        "lotId": "1237",
+        "tCatch":450,
+        "type": "Booklet",
+        "completed": {
+            "title": "Completed",
+            "value": 10
+        },
+        "remaining":  {
+            "title": "Remaining",
+            "value": 90
+        }
+    }
+
+]

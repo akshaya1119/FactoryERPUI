@@ -1,0 +1,14 @@
+/* Style for theme buttons */
+.theme-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
+.theme-btn.active {
+    transform: scale(1.2); /* Slightly enlarge the active button */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4); /* Add shadow to active button */
+    border-width: 2px; /* Highlight active button with a thicker border */
+}

@@ -1,0 +1,69 @@
+/* CSS for ProjectDetailsTable */
+
+/* Style for selected rows */
+.selected-checkbox-row {
+  background-color: #e7f0ff; /* Light blue for selected rows with checkboxes */
+}
+
+/* Hide checkboxes by default on small and medium screens */
+@media (max-width: 991px) {
+  .checkbox-column {
+    display: none;
+  }
+}
+
+/* Ensure checkboxes are always visible on large screens */
+@media (min-width: 992px) {
+  .checkbox-column {
+    display: table-cell;
+  }
+}
+
+.checkbox-column {
+  width: 50px; /* Adjust the width as needed */
+}
+
+.custom-placeholder {
+  color: rgba(0, 0, 0, 0.993);
+}
+
+.striped-table .ant-table-tbody > tr:nth-child(odd) {
+  background-color: #f5f5f5; /* or any color you prefer for odd rows */
+}
+
+.striped-table .ant-table-tbody > tr:nth-child(even) {
+  background-color: #ffffff; /* or any color you prefer for even rows */
+}
+
+  .pending-row td {
+    background-color: #f8bebe; /* light red */
+  }
+  
+  .started-row td {
+    background-color: #abd4fa; /* light blue */
+  }
+  
+  .completed-row td {
+    background-color: #9efab1; /* light green */
+  }
+
+  .custom-table-header  {
+    background-color: rgba(0, 0, 0, 0); /* bg is not shown yet (a===0) */
+  }
+
+  /* .custom-table-header .ant-table-thead > tr > th {
+    background: #456d42;
+  } */
+
+/* Simple status colors */
+.status-pending-row {
+    background-color: rgba(255, 0, 0, 0.1) !important; /* Light red */
+}
+
+.status-started-row {
+    background-color: rgba(0, 0, 255, 0.1) !important; /* Light blue */
+}
+
+.status-completed-row {
+    background-color: rgba(0, 255, 0, 0.1) !important; /* Light green */
+}

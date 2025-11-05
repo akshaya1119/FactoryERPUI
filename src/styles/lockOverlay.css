@@ -1,0 +1,44 @@
+/* LockOverlay.css */
+.lock-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1999;
+}
+
+.unlock-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.unlock-button:hover {
+  opacity: 0.8;
+}
+
+.modal-backdrop {
+  z-index: 1040 !important;
+}
+
+.modal {
+  z-index: 1050 !important;
+}
+
+.manual-unlock-btn {
+  position: fixed;
+  left: 10px; 
+  bottom: 70px;
+  cursor: grab; 
+  z-index: 9999;
+}
+
+.manual-unlock-btn:active {
+  cursor: grabbing;
+}

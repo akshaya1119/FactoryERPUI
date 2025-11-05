@@ -1,0 +1,440 @@
+[
+  {
+    "projectName": "Project Omega",
+    "type": "Magazine",
+    "completionPercentage": 60,
+    "remainingPercentage": 40,
+    "completed": 5000,
+    "remaining": 3000,
+    "lots": [
+        { "name": "Lot-1", "completion": 70, "remaining": 30 },
+        { "name": "Lot-2", "completion": 60, "remaining": 40 },
+        { "name": "Lot-3", "completion": 60, "remaining": 40 },
+        { "name": "Lot-4", "completion": 60, "remaining": 40 },
+        { "name": "Lot-5", "completion": 60, "remaining": 40 },
+        { "name": "Lot-6", "completion": 60, "remaining": 40 },
+        { "name": "Lot-7", "completion": 60, "remaining": 40 },
+        { "name": "Lot-8", "completion": 80, "remaining": 20 }
+      ],
+    "processes": [
+      {
+        "processName": "Planning",
+        "type": "Magazine",
+        "totalCatch": 450,
+        "totalQuantity": 900,
+        "remainingQuantity": 450,
+        "remainingCatch": 225,
+        "percentage": 45
+      },
+      {
+        "processName": "Design",
+        "type": "Digital",
+        "totalCatch": 650,
+        "totalQuantity": 1300,
+        "remainingQuantity": 650,
+        "remainingCatch": 325,
+        "percentage": 55
+      },
+      {
+        "processName": "Proofing",
+        "type": "Magazine",
+        "totalCatch": 550,
+        "totalQuantity": 1100,
+        "remainingQuantity": 550,
+        "remainingCatch": 275,
+        "percentage": 48
+      },
+      {
+        "processName": "Binding",
+        "type": "Magazine",
+        "totalCatch": 750,
+        "totalQuantity": 1500,
+        "remainingQuantity": 750,
+        "remainingCatch": 375,
+        "percentage": 52
+      },
+      {
+        "processName": "Quality Check",
+        "type": "Magazine",
+        "totalCatch": 350,
+        "totalQuantity": 750,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 47
+      },
+      {
+        "processName": "Packaging",
+        "type": "Magazine",
+        "totalCatch": 250,
+        "totalQuantity": 650,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 43
+      },
+      {
+        "processName": "Distribution",
+        "type": "Magazine",
+        "totalCatch": 350,
+        "totalQuantity": 750,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 51
+      },
+      {
+        "processName": "Archiving",
+        "type": "Magazine",
+        "totalCatch": 280,
+        "totalQuantity": 680,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 49
+      }
+    ]
+  },
+  {
+    "projectName": "Project Sigma",
+    "type": "Brochure",
+    "completionPercentage": 55,
+    "remainingPercentage": 45,
+    "completed": 4400,
+    "remaining": 3600,
+    "lots": [
+        { "name": "Lot-1", "completion": 50, "remaining": 50 },
+        { "name": "Lot-2", "completion": 65, "remaining": 35 }
+      ],
+    "processes": [
+      {
+        "processName": "Planning",
+        "type": "Brochure",
+        "totalCatch": 480,
+        "totalQuantity": 950,
+        "remainingQuantity": 470,
+        "remainingCatch": 235,
+        "percentage": 53.47
+      },
+      {
+        "processName": "Design",
+        "type": "Digital",
+        "totalCatch": 680,
+        "totalQuantity": 1400,
+        "remainingQuantity": 720,
+        "remainingCatch": 360,
+        "percentage": 57.43
+      },
+      {
+        "processName": "Proofing",
+        "type": "Brochure",
+        "totalCatch": 580,
+        "totalQuantity": 1150,
+        "remainingQuantity": 570,
+        "remainingCatch": 285,
+        "percentage": 51.57
+      },
+      {
+        "processName": "Folding",
+        "type": "Brochure",
+        "totalCatch": 780,
+        "totalQuantity": 1550,
+        "remainingQuantity": 770,
+        "remainingCatch": 385,
+        "percentage": 54.68
+      },
+      {
+        "processName": "Quality Check",
+        "type": "Brochure",
+        "totalCatch": 320,
+        "totalQuantity": 680,
+        "remainingQuantity": 360,
+        "remainingCatch": 180,
+        "percentage": 56.94
+      },
+      {
+        "processName": "Packaging",
+        "type": "Brochure",
+        "totalCatch": 280,
+        "totalQuantity": 680,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 59.82
+      },
+      {
+        "processName": "Distribution",
+        "type": "Brochure",
+        "totalCatch": 320,
+        "totalQuantity": 720,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 58.56
+      },
+      {
+        "processName": "Archiving",
+        "type": "Brochure",
+        "totalCatch": 290,
+        "totalQuantity": 690,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 60.97
+      }
+    ]
+  },
+  {
+    "projectName": "Project Delta",
+    "type": "Flyer",
+    "completionPercentage": 70,
+    "remainingPercentage": 30,
+    "completed": 5600,
+    "remaining": 2400,
+    "lots": [
+        { "name": "Lot-1", "completion": 75, "remaining": 25 },
+        { "name": "Lot-2", "completion": 70, "remaining": 30 },
+        { "name": "Lot-3", "completion": 65, "remaining": 35 }
+      ],
+    "processes": [
+      {
+        "processName": "Planning",
+        "type": "Flyer",
+        "totalCatch": 520,
+        "totalQuantity": 1050,
+        "remainingQuantity": 530,
+        "remainingCatch": 265,
+        "percentage": 52.48
+      },
+      {
+        "processName": "Design",
+        "type": "Digital",
+        "totalCatch": 720,
+        "totalQuantity": 1550,
+        "remainingQuantity": 830,
+        "remainingCatch": 415,
+        "percentage": 55.55
+      },
+      {
+        "processName": "Proofing",
+        "type": "Flyer",
+        "totalCatch": 620,
+        "totalQuantity": 1250,
+        "remainingQuantity": 630,
+        "remainingCatch": 315,
+        "percentage": 53.40
+      },
+      {
+        "processName": "Cutting",
+        "type": "Flyer",
+        "totalCatch": 820,
+        "totalQuantity": 1650,
+        "remainingQuantity": 830,
+        "remainingCatch": 415,
+        "percentage": 54.30
+      },
+      {
+        "processName": "Quality Check",
+        "type": "Flyer",
+        "totalCatch": 320,
+        "totalQuantity": 730,
+        "remainingQuantity": 410,
+        "remainingCatch": 205,
+        "percentage": 58.16
+      },
+      {
+        "processName": "Packaging",
+        "type": "Flyer",
+        "totalCatch": 310,
+        "totalQuantity": 710,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 59.34
+      },
+      {
+        "processName": "Distribution",
+        "type": "Flyer",
+        "totalCatch": 320,
+        "totalQuantity": 720,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 57.56
+      },
+      {
+        "processName": "Archiving",
+        "type": "Flyer",
+        "totalCatch": 310,
+        "totalQuantity": 710,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 60.34
+      }
+    ]
+  },
+  {
+    "projectName": "Project Epsilon",
+    "type": "Poster",
+    "completionPercentage": 85,
+    "remainingPercentage": 15,
+    "completed": 6800,
+    "remaining": 1200,
+    "lots": [
+        { "name": "Lot-1", "completion": 90, "remaining": 10 },
+        { "name": "Lot-2", "completion": 85, "remaining": 15 },
+        { "name": "Lot-3", "completion": 80, "remaining": 20 }
+      ],
+    "processes": [
+      {
+        "processName": "Planning",
+        "type": "Poster",
+        "totalCatch": 550,
+        "totalQuantity": 1100,
+        "remainingQuantity": 550,
+        "remainingCatch": 275,
+        "percentage": 53.00
+      },
+      {
+        "processName": "Design",
+        "type": "Digital",
+        "totalCatch": 750,
+        "totalQuantity": 1600,
+        "remainingQuantity": 850,
+        "remainingCatch": 425,
+        "percentage": 56.13
+      },
+      {
+        "processName": "Proofing",
+        "type": "Poster",
+        "totalCatch": 650,
+        "totalQuantity": 1300,
+        "remainingQuantity": 650,
+        "remainingCatch": 325,
+        "percentage": 54.00
+      },
+      {
+        "processName": "Printing",
+        "type": "Poster",
+        "totalCatch": 850,
+        "totalQuantity": 1700,
+        "remainingQuantity": 850,
+        "remainingCatch": 425,
+        "percentage": 55.00
+      },
+      {
+        "processName": "Quality Check",
+        "type": "Poster",
+        "totalCatch": 330,
+        "totalQuantity": 730,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 57.79
+      },
+      {
+        "processName": "Packaging",
+        "type": "Poster",
+        "totalCatch": 320,
+        "totalQuantity": 720,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 59.56
+      },
+      {
+        "processName": "Distribution",
+        "type": "Poster",
+        "totalCatch": 330,
+        "totalQuantity": 730,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 58.79
+      },
+      {
+        "processName": "Archiving",
+        "type": "Poster",
+        "totalCatch": 320,
+        "totalQuantity": 720,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 61.56
+      }
+    ]
+  },
+  {
+    "projectName": "Project Zeta",
+    "type": "Poster",
+    "completionPercentage": 85,
+    "remainingPercentage": 15,
+    "completed": 6800,
+    "remaining": 1200,
+    "lots": [
+        { "name": "Lot-1", "completion": 85, "remaining": 15 },
+        { "name": "Lot-2", "completion": 85, "remaining": 15 }
+      ],
+    "processes": [
+      {
+        "processName": "Planning",
+        "type": "Poster",
+        "totalCatch": 550,
+        "totalQuantity": 1100,
+        "remainingQuantity": 550,
+        "remainingCatch": 275,
+        "percentage": 53.00
+      },
+      {
+        "processName": "Design",
+        "type": "Digital",
+        "totalCatch": 750,
+        "totalQuantity": 1600,
+        "remainingQuantity": 850,
+        "remainingCatch": 425,
+        "percentage": 56.13
+      },
+      {
+        "processName": "Proofing",
+        "type": "Poster",
+        "totalCatch": 650,
+        "totalQuantity": 1300,
+        "remainingQuantity": 650,
+        "remainingCatch": 325,
+        "percentage": 54.00
+      },
+      {
+        "processName": "Printing",
+        "type": "Poster",
+        "totalCatch": 850,
+        "totalQuantity": 1700,
+        "remainingQuantity": 850,
+        "remainingCatch": 425,
+        "percentage": 55.00
+      },
+      {
+        "processName": "Quality Check",
+        "type": "Poster",
+        "totalCatch": 330,
+        "totalQuantity": 730,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 57.79
+      },
+      {
+        "processName": "Packaging",
+        "type": "Poster",
+        "totalCatch": 320,
+        "totalQuantity": 720,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 59.56
+      },
+      {
+        "processName": "Distribution",
+        "type": "Poster",
+        "totalCatch": 330,
+        "totalQuantity": 730,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 58.79
+      },
+      {
+        "processName": "Archiving",
+        "type": "Poster",
+        "totalCatch": 320,
+        "totalQuantity": 720,
+        "remainingQuantity": 400,
+        "remainingCatch": 200,
+        "percentage": 61.56
+      }
+    ]
+  }
+]

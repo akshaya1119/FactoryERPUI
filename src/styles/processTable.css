@@ -1,0 +1,14 @@
+.ant-table-tbody > tr:nth-child(odd) {
+    background-color: #f5f5f5; /* Stripe color */
+}
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  #alert-marquee {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }

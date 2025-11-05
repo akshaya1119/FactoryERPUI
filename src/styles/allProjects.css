@@ -1,0 +1,116 @@
+/* 
+@keyframes progressAnimation {
+    from {
+      stroke-dashoffset: 100%;
+    }
+    to {
+      stroke-dashoffset: 0%;
+    }
+  }
+  
+  .react-circular-progressbar-path {
+    animation: progressAnimation 1s ease-in-out forwards;
+  }
+   */
+
+   .no-scrollbar {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+
+  .chart-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .chart-container {
+    position: relative;
+
+  }
+  
+  .project-details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .chart-container:hover .project-details {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dcard {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 400ms;
+    
+  }
+  
+  /* .card:hover {
+    transform: scale(1.1);
+  } */
+  
+  h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .chart-wrapper {
+      width: 80%;
+    }
+    
+    .card {
+      padding: 20px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* For mobile devices */
+    .chart-wrapper {
+      width: 100%;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    h4 {
+      font-size: 16px;
+    }
+  
+    .chart-container {
+      margin-bottom: 20px;
+    }
+  
+    .marquee img {
+      width: 30px;
+    }
+  
+    /* Make the project details visible on mobile */
+    .project-details {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  

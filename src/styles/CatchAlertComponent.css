@@ -1,0 +1,31 @@
+.alert-container {
+    position: relative;
+    /* width: 300px;
+    height: 200px; */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+}
+
+.alert-list {
+    position: absolute;
+    bottom: 0; /* Start from the bottom */
+    animation: scroll-up 10s linear infinite; /* Smooth scroll upwards */
+}
+
+.paused {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+.alert {
+    margin-bottom: 10px;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%); /* Start below the container */
+    }
+    100% {
+        transform: translateY(-100%); /* End above the container */
+    }
+}

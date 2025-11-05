@@ -1,0 +1,94 @@
+.assigned-team-body {
+    background-color: #f8f9fa;
+}
+
+.assigned-team-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.assigned-team-card {
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+}
+
+.assigned-team-card-body {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.assigned-team-card-body img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.assigned-team-info {
+    flex-grow: 1;
+}
+
+.assigned-team-info h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.assigned-team-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.assigned-team-options {
+    font-size: 20px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.assigned-team-footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.assigned-team-search-box {
+    position: absolute;
+    right: 50px;
+    top: 8px;
+    display: none;
+    animation: slide-in 0.3s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+.assigned-team-dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.assigned-team-dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.assigned-team-dropdown-menu a:hover {
+    background-color: #f8f9fa;
+}

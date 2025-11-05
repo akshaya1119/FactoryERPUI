@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: #f8f9fa;
+  height: 90vh;
+  padding: 20px;
+}
+
+.sidebar-item ,.sidebar-item-dark {
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #e9ecef; /* Change background on hover */
+}
+.sidebar-item-dark:hover {
+  background-color: #345675 !important;
+}
+
+.active {
+  background-color: #d1ecf1; /* Highlight active item */
+  font-weight: bold;
+}
+
+.content-area {
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+/* Adjusting icon spacing */
+.ml-3 {
+  margin-left: 1rem; /* Uniform spacing */
+}
+
+.ml-4 {
+  margin-left: 1.25rem; /* Slightly more for child items */
+}
+
+.menu-icon {
+  margin-right: 10px; /* Adjust spacing between icon and label */
+  font-size: 25px; /* Ensure the icon size matches the menu item */
+}
+
+/* Optionally, you might want to adjust the padding or margins of the sidebar items */
+.sidebar-item {
+  padding: 12px 15px; /* Adjust as needed for visual balance */
+}
