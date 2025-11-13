@@ -123,11 +123,11 @@ const ProjectDetailsTable = ({
   const [courseData, setCourseData] = useState([]);
   const [subjectData, setSubjectData] = useState([]);
   const [examDate, setExamDate] = useState([]);
-  const [examTime,setExamTime] = useState([]);
+  const [examTime, setExamTime] = useState([]);
   const [inputPagesModalData, setInputPagesModalData] = useState(null);
   const [inputPagesModalShow, setInputPagesModalShow] = useState(false);
   const [envelopeData, setEnvelopeData] = useState({});
-console.log(tableData)
+  console.log(tableData)
   const showNotification = (type, messageKey, descriptionKey, details = "") => {
     notification[type]({
       message: t(messageKey),
@@ -271,6 +271,16 @@ console.log(tableData)
     const newStatus = statusSteps[newStatusIndex];
 
     const updatedRow = tableData.find((row) => row.srNo === srNo);
+    if (hasFeaturePermission(1)) {
+      if (updatedRow.zoneId === 0 || updatedRow.zoneId === null) {
+        showNotification(
+          "error",
+          "Status Update Failed",
+          "Cannot change status: Zone is not assigned."
+        );
+        return;
+      }
+    }
 
     // Check if previous process exists and is not completed, with threshold exception
     if (
@@ -393,7 +403,7 @@ console.log(tableData)
 
   const columns = [
     {
-      fixed:'left',
+      fixed: 'left',
       title: (
         <input
           type="checkbox"
@@ -415,12 +425,12 @@ console.log(tableData)
         />
       ),
       key: "selectAll",
-      fixed:"left",
+      fixed: "left",
       render: (_, record) => (
         <input
           type="checkbox"
           checked={selectedRowKeys.includes(record.srNo)}
-        
+
           onChange={(e) => {
             const checked = e.target.checked;
             if (checked) {
@@ -440,20 +450,20 @@ console.log(tableData)
     },
     {
       title: t("srNo"),
-      fixed:'left',
+      fixed: 'left',
       key: "srNo",
-      fixed:"left",
+      fixed: "left",
       align: "center",
       render: (_, __, index) => (currentPage - 1) * pageSize + index + 1,
       responsive: ["sm"],
     },
     {
       title: t("catchNo"),
-      fixed:'left',
+      fixed: 'left',
       dataIndex: "catchNumber",
       key: "catchNumber",
       align: "center",
-      fixed:"left",
+      fixed: "left",
       width: "15%",
       sorter: (a, b) => a.catchNumber.localeCompare(b.catchNumber),
       render: (text, record) => (
@@ -572,28 +582,28 @@ console.log(tableData)
         },
       ]
       : []),
-      ...(columnVisibility["Exam Time"]
-        ? [
-          {
-            title: t("examTime"),
-            dataIndex: "examTime",
-            align: "center",
-            key: "examTime",
-            sorter: (a, b) => a.examTime - b.examTime,
-          },
-        ]
-        : []),
-      ...(columnVisibility["Pages"]
-        ? [
-            {
-              title: t("Pages"),
-              dataIndex: "pages",
-              align: "center",
-              key: "pages",
-              sorter: (a, b) => a.pages - b.pages,
-            },
-          ]
-        : []),
+    ...(columnVisibility["Exam Time"]
+      ? [
+        {
+          title: t("examTime"),
+          dataIndex: "examTime",
+          align: "center",
+          key: "examTime",
+          sorter: (a, b) => a.examTime - b.examTime,
+        },
+      ]
+      : []),
+    ...(columnVisibility["Pages"]
+      ? [
+        {
+          title: t("Pages"),
+          dataIndex: "pages",
+          align: "center",
+          key: "pages",
+          sorter: (a, b) => a.pages - b.pages,
+        },
+      ]
+      : []),
     ...(columnVisibility["Interim Quantity"]
       ? [
         {
@@ -682,7 +692,7 @@ console.log(tableData)
         },
       ]
       : []),
-    ...(columnVisibility["Paper"] 
+    ...(columnVisibility["Paper"]
       ? [
         {
           title: t("questionPaper"),
@@ -694,71 +704,66 @@ console.log(tableData)
         },
       ]
       : []),
-      ...(columnVisibility["Paper Details"]
-        ? [
-            {
-              title: t("paperDetails"),
-              dataIndex: "paperDetails",
-              width: "20%",
-              align: "center",
-              key: "paperDetails",
-              render: (_, record) => (
-                <div className="d-flex flex-column">
-                  <span className="fw-bold">{`Catch: ${
-                    record.catchNumber || "N/A"
-                  }`}</span>
-                  <span className="fw-bold">{`Course: ${
-                    record.course || "N/A"
-                  }`}</span>
-                  <span className="fw-bold">{`Paper: ${
-                    record.paper || "N/A"
-                  }`}</span>
-                  <span className="fw-bold">{`Exam Date: ${
-                    formatDate(record.examDate) || "N/A"
-                  }`}</span>
-                  <span className="fw-bold">{`Exam Time: ${
-                    record.examTime || "N/A"
-                  }`}</span>
-                </div>
-              ),
-              sorter: (a, b) => a.catchNumber.localeCompare(b.catchNumber),
-            },
-          ]
-        : []),
-      ...(columnVisibility["Envelopes"] 
-        ? [
-            {
-              title: t("innerEnvelope"),
-              dataIndex: "envelopes",
-              width: "20%",
-              align: "center",
-              key: "envelopes",
-              children: Object.keys(
-                Object.values(envelopeData)[0] || {}
-              ).map((envKey) => ({
-                title: envKey,
-                align: "center",
-                dataIndex: "catchNo",
-                key: envKey,
-                render: (_, record) => {
-                  // Log to debug
-                  console.log('Record:', record);
-                  console.log('Envelope Data:', envelopeData);
-                  console.log('Specific Envelope:', envelopeData[record.catchNumber]);
-                  
-                  return envelopeData[record.catchNumber]?.[envKey] || 
-                         envelopeData[record.catchNo]?.[envKey] || ''
-                }
-              }))
+    ...(columnVisibility["Paper Details"]
+      ? [
+        {
+          title: t("paperDetails"),
+          dataIndex: "paperDetails",
+          width: "20%",
+          align: "center",
+          key: "paperDetails",
+          render: (_, record) => (
+            <div className="d-flex flex-column">
+              <span className="fw-bold">{`Catch: ${record.catchNumber || "N/A"
+                }`}</span>
+              <span className="fw-bold">{`Course: ${record.course || "N/A"
+                }`}</span>
+              <span className="fw-bold">{`Paper: ${record.paper || "N/A"
+                }`}</span>
+              <span className="fw-bold">{`Exam Date: ${formatDate(record.examDate) || "N/A"
+                }`}</span>
+              <span className="fw-bold">{`Exam Time: ${record.examTime || "N/A"
+                }`}</span>
+            </div>
+          ),
+          sorter: (a, b) => a.catchNumber.localeCompare(b.catchNumber),
+        },
+      ]
+      : []),
+    ...(columnVisibility["Envelopes"]
+      ? [
+        {
+          title: t("innerEnvelope"),
+          dataIndex: "envelopes",
+          width: "20%",
+          align: "center",
+          key: "envelopes",
+          children: Object.keys(
+            Object.values(envelopeData)[0] || {}
+          ).map((envKey) => ({
+            title: envKey,
+            align: "center",
+            dataIndex: "catchNo",
+            key: envKey,
+            render: (_, record) => {
+              // Log to debug
+              console.log('Record:', record);
+              console.log('Envelope Data:', envelopeData);
+              console.log('Specific Envelope:', envelopeData[record.catchNumber]);
+
+              return envelopeData[record.catchNumber]?.[envKey] ||
+                envelopeData[record.catchNo]?.[envKey] || ''
             }
-          ]
-        : []),
+          }))
+        }
+      ]
+      : []),
     {
       title: t("status"),
       dataIndex: "status",
       fixed: 'right',
       key: "status",
-      fixed:"right",
+      fixed: "right",
       align: "center",
       render: (text, record) => {
         // Add debug logging
@@ -1553,8 +1558,8 @@ console.log(tableData)
                     <Menu.Item>
                       <div>
                         <Switch
-                        checked={showBarChart}
-                        onChange={() => setShowBarChart(!showBarChart)}
+                          checked={showBarChart}
+                          onChange={() => setShowBarChart(!showBarChart)}
                         />
                         <span className={`ms-2 ${customDarkText}`}>
                           {t("showCatchData")}
@@ -1567,8 +1572,8 @@ console.log(tableData)
                     <Menu.Item>
                       <div>
                         <Switch
-                        checked={showPieChart}
-                        onChange={() => setShowPieChart(!showPieChart)}
+                          checked={showPieChart}
+                          onChange={() => setShowPieChart(!showPieChart)}
                         />
                         <span className={`ms-2 ${customDarkText}`}>
                           {t("showCompletionPercentage")}
@@ -1622,17 +1627,17 @@ console.log(tableData)
               <div className="mt-1 d-flex align-items-center">
                 {
                   hasFeaturePermission(8) && (
-                     <span
-                  className={`me-2 ${customDark === "dark-dark"
-                    ? "text-white"
-                    : "custom-theme-dark-text"
-                    } fs-6 fw-bold`}
-                >
-                  {t("updateStatus")}
-                </span>
+                    <span
+                      className={`me-2 ${customDark === "dark-dark"
+                        ? "text-white"
+                        : "custom-theme-dark-text"
+                        } fs-6 fw-bold`}
+                    >
+                      {t("updateStatus")}
+                    </span>
                   )
                 }
-               
+
                 {(() => {
                   const requirements = [];
                   const selectedRows = selectedRowKeys
@@ -1745,34 +1750,31 @@ console.log(tableData)
             )}
           </Col>
 
-          <Col lg={6} md={8}  className="pe-0">
-          <div className="d-flex flex-wrap gap-2 justify-content-center">
-            {projectLots.map((lot, index) => (
-              <button
-                key={index}
-                className={`btn btn-sm ${
-                  lotNo === lot.lotNo
-                    ? "bg-white text-dark border-dark"
-                    : customBtn
-                } ${
-                  customDark === "dark-dark" ? "border" : "custom-light-border"
-                } 
-                d-flex align-items-center justify-content-center p-2 rounded-2 ${
-                  customDark === "dark-dark"
-                    ? "text-dark border-dark"
-                    : "text-dark"
-                } ${customDarkBorder}`}
-                onClick={() => handleLotClick(lot.lotNo)}
-                style={{
-                  minWidth: "100px",
-                  transition: "all 0.2s",
-                }}
-              >
-                {t("lot")} {lot.lotNo}
-              </button>
-            ))}
-          </div>
-        </Col>
+          <Col lg={6} md={8} className="pe-0">
+            <div className="d-flex flex-wrap gap-2 justify-content-center">
+              {projectLots.map((lot, index) => (
+                <button
+                  key={index}
+                  className={`btn btn-sm ${lotNo === lot.lotNo
+                      ? "bg-white text-dark border-dark"
+                      : customBtn
+                    } ${customDark === "dark-dark" ? "border" : "custom-light-border"
+                    } 
+                d-flex align-items-center justify-content-center p-2 rounded-2 ${customDark === "dark-dark"
+                      ? "text-dark border-dark"
+                      : "text-dark"
+                    } ${customDarkBorder}`}
+                  onClick={() => handleLotClick(lot.lotNo)}
+                  style={{
+                    minWidth: "100px",
+                    transition: "all 0.2s",
+                  }}
+                >
+                  {t("lot")} {lot.lotNo}
+                </button>
+              ))}
+            </div>
+          </Col>
 
           {/* search box */}
           <Col lg={3} md={1} xs={12}>

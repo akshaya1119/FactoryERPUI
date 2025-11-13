@@ -130,6 +130,7 @@ const SelectZoneModal = ({ show, handleClose, data, processId, handleSave }) => 
         <Button 
           onClick={handleConfirm}
           className={`${customBtn} border-0`}
+           disabled={!zoneId || zoneId === 0}
         >
           {t('saveChanges')}
         </Button>
